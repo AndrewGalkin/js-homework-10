@@ -5,13 +5,14 @@
   "repository": "https://github.com/AndrewGalkin/js-homework-10.git",
   "license": "MIT",
   "scripts": {
-    "dev": "parcel index.html -p 6969",
+    "dev": "parcel index.html -p 9999",
     "build": "parcel build index.html --public-url /js-homework-10/",
     "deploy": "gh-pages -d dist",
     "predeploy": "npm run build"
   },
   "devDependencies": {
     "parcel-bundler": "^1.12.5",
+    "parcel-plugin-handlebars-precompile": "^1.0.2",
     "parcel-plugin-nuke-dist": "^1.0.1"
   },
   "dependencies": {
