@@ -1,4 +1,7 @@
 # Logs
+dist
+.cache
+node_modules
 .idea
 logs
 *.log
