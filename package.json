@@ -9,7 +9,8 @@
     "dev": "parcel *.html",
     "build": "parcel build *.html --public-url /js-homework-10/",
     "deploy": "gh-pages -d dist",
-    "predeploy": "npm run dev"
+    "predeploy": "npm run dev",
+    "push-gh-pages": "push-dir --dir=dist --branch=gh-pages --cleanup --verbose"
   },
   "devDependencies": {
     "gh-pages": "^3.2.3",
