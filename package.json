@@ -4,8 +4,9 @@
   "main": "index.js",
   "repository": "https://github.com/AndrewGalkin/js-homework-10.git",
   "license": "MIT",
+  "homepage": "https://AndrewGalkin.github.io/js-homework-10",
   "scripts": {
-    "dev": "parcel index.html -p 9999",
+    "dev": "parcel index.html",
     "build": "parcel build index.html --public-url /js-homework-10/",
     "deploy": "gh-pages -d dist",
     "predeploy": "npm run build"
