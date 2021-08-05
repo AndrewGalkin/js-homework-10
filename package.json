@@ -8,7 +8,8 @@
   "scripts": {
     "dev": "parcel *.html",
     "build": "parcel build *.html --public-url /js-homework-10/",
-    "deploy": "gh-pages -d dist"
+    "deploy": "gh-pages -d dist",
+    "predeploy": "npm run dev"
   },
   "devDependencies": {
     "gh-pages": "^3.2.3",
