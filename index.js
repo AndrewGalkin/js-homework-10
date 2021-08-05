@@ -5,6 +5,7 @@ const store = localStorage.getItem('theme')
 
 if (!store) {
     localStorage.setItem("theme", "light-theme")
+
 }
 
 const menuList = document.querySelector(".js-menu")
@@ -33,6 +34,7 @@ if (store === Theme.DARK) {
 
 const changeThemeSwitch = (event) => {
     if (event.target.checked) {
+
         refs.bodyColor.classList.remove(Theme.LIGHT)
         refs.bodyColor.classList.add(Theme.DARK)
         localStorage.setItem("theme", "dark-theme")
