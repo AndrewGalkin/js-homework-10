@@ -15,7 +15,6 @@ menuList.insertAdjacentHTML("beforeend", ingredientsList);
 function createIngredientsList(ingredients) {
     return menuIngredientsList(ingredients)
 }
-
 const refs = {
     toggleBtn: document.getElementById("theme-switch-toggle"),
     bodyColor: document.querySelector("body")
@@ -34,7 +33,6 @@ if (store === Theme.DARK) {
 
 const changeThemeSwitch = (event) => {
     if (event.target.checked) {
-
         refs.bodyColor.classList.remove(Theme.LIGHT)
         refs.bodyColor.classList.add(Theme.DARK)
         localStorage.setItem("theme", "dark-theme")
@@ -46,6 +44,7 @@ const changeThemeSwitch = (event) => {
     }
 }
 refs.toggleBtn.addEventListener("change", changeThemeSwitch);
+
 
 
 
