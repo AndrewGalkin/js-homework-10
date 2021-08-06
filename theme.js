@@ -1,19 +1,8 @@
-import menuIngredientsList from './templates/menu_ingredients.hbs'
-import ingredients from './menu.json'
-
 const store = localStorage.getItem('theme')
 
 if (!store) {
     localStorage.setItem("theme", "light-theme")
 
-}
-
-const menuList = document.querySelector(".js-menu")
-const ingredientsList = createIngredientsList(ingredients);
-menuList.insertAdjacentHTML("beforeend", ingredientsList);
-
-function createIngredientsList(ingredients) {
-    return menuIngredientsList(ingredients)
 }
 const refs = {
     toggleBtn: document.getElementById("theme-switch-toggle"),
@@ -44,17 +33,3 @@ const changeThemeSwitch = (event) => {
     }
 }
 refs.toggleBtn.addEventListener("change", changeThemeSwitch);
-
-
-
-
-
-
-
-
-
-
-
-
-
-

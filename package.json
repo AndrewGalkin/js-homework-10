@@ -4,7 +4,7 @@
   },
   "name": "js-homework-10",
   "version": "1.0.0",
-  "main": "index.js",
+  "main": "menu.js",
   "repository": "https://github.com/AndrewGalkin/js-homework-10.git",
   "license": "MIT",
   "scripts": {
